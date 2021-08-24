@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- One of the following themes -->
+		<!-- 'classic' theme -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css" />
+		<!-- 'monolith' theme -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css" />
+		<!-- 'nano' theme -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+		<!-- styling -->
+		<link rel="stylesheet" href="./style.css" />
+		<!-- Modern or es5 bundle -->
+		<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+
+		<title>Color Picker</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="head">
+					<h1>Color</h1>
+					<div class="dot"></div>
+					<h1>App</h1>
+				</div>
+
+				<div class="ham">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</header>
+
+			<nav>
+				<ul>
+					<li>Choose</li>
+					<li>Name</li>
+					<li>Describe</li>
+					<li>Download</li>
+				</ul>
+			</nav>
+
+			<main>
+				<h1>Choose a color</h1>
+
+				<p>
+					Tap the screen or press your spacebar to generate a random color out of the 16.7 million
+					possibilities of the <b>sRGB</b> color spectrum.
+				</p>
+
+				<p>Or open the color picker to precisely pick the color.</p>
+
+				<button>
+					Open color picker
+					<div class="color-picker" aria:btn:save="save and close"></div>
+				</button>
+
+				<div class="col">
+					<p>Hexadecimal</p>
+					<h1 id="hex">#ff5722</h1>
+					<button>Choose this color</button>
+				</div>
+			</main>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>
